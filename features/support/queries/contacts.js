@@ -18,36 +18,13 @@ module.exports = {
         items {
           id
           fullName
-          firstName
-          lastName
-          contacted
           primaryEmail
-          primaryPhone
-          isNew
-          sourceInstanceName
-          sourceInstanceId
-          createDate
-          assignmentName
-          crmEntityType
-          score
-          groupName
-          groupId
-          minPrice
-          maxPrice
-          interestedInZipCodes
-          audienceId
-          audience
-          audiences {
-            id
-            audience
-          }
         }
       }
     }`,
   "variables": {
     "contactsInput": {
       "accountId": "6866ea72-9619-4ddb-a6ad-cf4f23060977",
-      "query": "placester"
     },
     "page": {
       "limit": 10,

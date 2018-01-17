@@ -13,33 +13,13 @@ module.exports = {
       ) {
         id
         fullName
-        firstName
-        lastName
-        contacted
         primaryEmail
-        primaryPhone
-        isNew
-        sourceInstanceName
-        sourceInstanceId
-        createDate
-        assignmentName
-        crmEntityType
-        score
-        groupName
-        groupId
-        minPrice
-        maxPrice
-        interestedInZipCodes
-        tags{
-          name
-          preferredCategory
-        }
       }
-    }`,
+  }`,
   "variables": {
     "leadFetchInput": {
-      "accountId": "f44c373e-68af-4a31-be38-b3f96033699d",
-      "id": "9346d91c-6756-42f8-a0aa-7d0a55e4adf4"
+      "accountId": "c6a5de7a-48db-4f62-b111-218ca21ecadd",
+      "id": "9fd214c0-fbbf-11e7-943b-b7a799aad205"
     }
   }
 };

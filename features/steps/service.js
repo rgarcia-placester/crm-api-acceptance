@@ -59,3 +59,11 @@ Then('Service Response Body should be {string}', function (body) {
 Then('Service Response should be in json format', function() {
     expect(this.service.response.headers.get('content-type')).to.include('application/json');
 });
+
+Then('the JSON response should have property {string} equal to {string}', function(prop, value) {
+  return expect(JSON.parse(this.service.response.body)).to.have.nested.property(prop, value)
+})
+
+Then('the JSON response should have property {string}', function(prop) {
+  return expect(JSON.parse(this.service.response.body)).to.have.nested.property(prop)
+})

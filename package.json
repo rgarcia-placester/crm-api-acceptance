@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "require-dir": "^0.3.2"
+  },
   "devDependencies": {
     "chai": "^4.1.2",
     "cucumber": "^3.2.1",
@@ -11,7 +13,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cucumber": "cucumber-js"
+    "test:acceptance": "cucumber-js"
   },
   "author": "",
   "license": "ISC"

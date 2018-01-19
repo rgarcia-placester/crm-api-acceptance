@@ -1,9 +1,9 @@
 @CRM @API @Leads
 Feature: CRM Api GetLead Query
 
-  @RO @Staging
+  @RO
   Scenario: Get Lead
-    Given the Service Endpoint "https://crm-api.pl-internal.com/v1"
+    Given the CRM Service Endpoint
       And the GraphQL query "leadGet"
     When I call the Service
     Then Service Status code should be 200

@@ -1,9 +1,9 @@
 @CRM @API @GraphQL
 Feature: CRM Api GraphQL
 
-  @RO @Staging
+  @RO
   Scenario: Malformed payload
-    Given the Service Endpoint "https://crm-api.pl-internal.com/v1"
+    Given the CRM Service Endpoint
       And the Service Method "POST"
       And the Service Header "content-type" set to "application/json"
       And the Service Body "{}"

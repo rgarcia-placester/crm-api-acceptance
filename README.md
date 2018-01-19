@@ -10,18 +10,18 @@ $ npm install
 
 ## Run Acceptance
 
-### Run all Acceptance Test
+### Run all Acceptance Test into Staging environment
 ```
-$ npm run test:acceptance
+$ npm run test:acceptance:staging
 ```
 
 ### Run all Acceptance Test filtered by tag
 ```
-$ npm run test:acceptance -- -t tag
+$ npm run test:acceptance:staging -- -t tag
 ```
 
 ```
-ex: $ npm run test:acceptance -- -t '@Leads and @RO'
+ex: $ npm run test:acceptance:staging -- -t '@Leads and @RO'
 ```
 
 ## Writing a new Acceptance

@@ -1,10 +1,3 @@
-/**
- * Test data to run this lambda function in a lambda-local environment. To execute run:
- * cd ./services/api
- * npm install (if you haven't already)
- * npm run run_lambda -- -l ./src/index.js -h handler -e ./lambda_local/pl-internal/test-event-create-lead.js
- */
-
 module.exports = {
   "query":
     `mutation createLead($leadInput: LeadInput!) {
@@ -51,11 +44,11 @@ module.exports = {
       "minPrice": "1234.56",
       "maxPrice": "5678.9",
       "interestedInZipCodes": ["60601", "60606"],
-      "unit": "230", 
-      "city": "Chitown", 
-      "state": "IL", 
-      "neighborhood": "Loop", 
-      "county": "IL", 
+      "unit": "230",
+      "city": "Chitown",
+      "state": "IL",
+      "neighborhood": "Loop",
+      "county": "IL",
       "score": "GREEN",
       "meta": [
         {
